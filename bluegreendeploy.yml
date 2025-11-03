@@ -20,7 +20,7 @@ kind: Deployment
 metadata:
   name: ktcloud-blue
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       color: blue
@@ -47,7 +47,7 @@ kind: Deployment
 metadata:
   name: ktcloud-green
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       color: green
@@ -66,3 +66,4 @@ spec:
         ports:
 
         - containerPort: 80 # nginx 기본 포트
+

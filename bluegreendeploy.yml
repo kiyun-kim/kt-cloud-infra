@@ -20,6 +20,7 @@ kind: Deployment
 metadata:
   name: ktcloud-blue
 spec:
+  replicas: 1
   selector:
     matchLabels:
       color: blue
@@ -46,6 +47,7 @@ kind: Deployment
 metadata:
   name: ktcloud-green
 spec:
+  replicas: 1
   selector:
     matchLabels:
       color: green
@@ -62,4 +64,5 @@ spec:
             memory: "32Mi"
             cpu: "250m"     # 1000m = 1 CPU
         ports:
+
         - containerPort: 80 # nginx 기본 포트
